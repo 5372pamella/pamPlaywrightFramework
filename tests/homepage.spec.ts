@@ -5,6 +5,10 @@ test.describe('Homepage Tests', () => {
  test('Navigate to Login Page', async ({ homePage }) => {
     await homePage.openNdosiPage();
     await homePage.navigateToHomePage();
-     });
+    await homePage.verifyLoginButtonVisible();
+    await homePage.getLoginButtonText();
+    console.log(await homePage.getLoginButtonText());
+    });
 
-})
+});
+    
