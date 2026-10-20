@@ -7,7 +7,7 @@ test.describe('Homepage Tests', () => {
     await homePage.navigateToHomePage();
     await homePage.verifyLoginButtonVisible();
     await homePage.getLoginButtonText();
-    console.log(await homePage.getLoginButtonText());
+    console.log(await homePage.getLoginButtonText()); 
     });
 
 });
